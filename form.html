@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <head>
     <title>RegisterForm</title>
+    <style>
+        table{
+            margin:auto;
+            height:200px;
+            width:500px;
+        }
+        th,td{
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Employee RegisterForm</h1>
+    <h1 style="text-align: center;">Employee RegisterForm</h1>
+    <table border="1">
+
+    
     <form>
-    <label>Name:</label> 
-    <input type="text" name="name" value=""><br>
-    <label>Age:</label> 
-    <input type="number" name="age" value=""><br>
-    <label>Address:</label> 
-    <textarea cols="30" rows="3">please enter your address</textarea>
+        <tr>
+   <td> <label>Name:</label> </td>
+    <td><input type="text" name="name" value=""><br></td></tr>
+    <tr><td><label>Age:</label></td> 
+    <td><input type="number" name="age" value=""></td><br></tr>
+    <tr><td><label>DOB:</label></td> 
+        <td><input type="date" name="dob" value=""></td><br></tr>
+   <tr> <td><label>Address:</label> </td>
+    <td><textarea cols="30" rows="3">please enter your address</textarea></td></tr>
     <br>
-    <label>Sex:</label><br> 
-   <input type="radio" name="sex"><label>female</label>
-   <input type="radio" name="sex"><label>male</label>
-  <br>
-  <label>Language:</label><br>
-  <input type="checkbox" name="Language"><label>English</label>
+    <tr><td>
+    <label>Sex:</label><br> </td>
+   <td><input type="radio" name="sex"><label>female</label>
+   <input type="radio" name="sex"><label>male</label></td>
+  <br></tr>
+  <tr><td><label>Language:</label></td><br>
+  <td><input type="checkbox" name="Language"><label>English</label>
   <input type="checkbox" name="Language"><label>Tamil</label>
   <input type="checkbox" name="Language"><label>Hindi</label>
-<br>
-<label>Email:</label>
-<input type="email" name="email"><br>
-<label>Qualification:</label>
+<br></td></tr>
+<tr><td><label>Email:</label></td>
+<td><input type="email" name="email"><br></td></tr>
+<tr>
+    <td>
+<label>Qualification:</label></td>
+<td>
 <select>
 <option>pleaseselect</option>
 
@@ -34,7 +54,8 @@
 <option>MCA</option>
 <option>Bcom</option>
 
-</select><br>
-<input type="submit" value="Register">
+</select><br></td></tr>
+<tr><td><input type="submit" value="Register"></td></tr>
     </form>
+</table>
 </body>

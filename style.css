@@ -1,0 +1,43 @@
+/* element selector */
+h1{
+   text-align: center; 
+   background-color: black;
+   color: white;
+   border:2px dashed grey;
+   padding: 25px;
+}
+/* class selector */
+
+.test
+{
+    background-color:blueviolet;
+    color: white;
+    border:2px solid grey;
+    padding: 25px;  
+}
+/* id selector */
+
+#demo
+{
+    background-color:brown;
+    color: white;
+    border:2px solid grey;
+    padding: 25px; 
+}
+/* universal selector */
+*
+{
+  font-size:20px;
+}
+body
+{
+background-image: url('xx.jpeg');
+background-repeat: no-repeat;
+/*background-size: cover;*/
+background-position: left;
+background-attachment:fixed;
+}
+a{
+    background-color: brown;
+    float: right;
+}
