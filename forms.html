@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html>
+ <head>
+    <title>EmployeeWebsite</title>
+    <style>
+        
+        table{
+            margin:auto;
+            width:600px;
+            height:400px;
+        
+           
+        }
+        th,td
+        {
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+         #name {
+            height:50px;
+            width:100%;
+        }
+        #age {
+            height:50px;
+            width:100%;
+        }
+        
+    </style>
+ </head>   
+ <body>
+    <h1><u>Registration Form</u></h1>
+    <form>
+        <table border="1">
+            <tr>
+       <td><label>Name:</label></td> 
+        <td><input type="text" id="name" name="name" value=""><br></td></tr>
+        <tr><td><label>Age:</label></td>
+       <td> <input type="number" id="age" name="age" value=""><br></td></tr>
+        <tr><td><label>email:</label></td>
+        <td><input type="email" name="email" value=""><br></td></tr>
+        <tr><td><label>Address:</label></td>
+        <td><textarea cols="5" rows="8"></textarea><br></td></tr>
+        <tr><td><label>sex:</label></td>
+       <td> <input type="radio" name="sex"><label>Male</label>
+        <input type="radio" name="sex"><label>FeMale</label><br></td></tr>
+        <tr><td><label>Language:</label></td>
+       <td> <input type="checkbox" name="Language"><label>English</label>
+        <input type="checkbox" name="Language"><label>Tamil</label><br>
+        <input type="checkbox" name="Language"><label>Hindi</label><br></td></tr>
+       <tr> <td><label>Qualification:</label></td>
+       <td><select>
+            <option>select option</option>
+
+            <option>B.sc</option>
+            <option>M.sc</option>
+            <option>Btech</option>
+            <option>BE</option>
+            <option>Bcom</option>
+            <option>MCA</option>
+            <option>M.sc</option>
+
+        </select><br></td> </tr>
+        <tr><td><input type="submit" value="Register"></td></tr>
+
+
+        
+    </table>
+    </form>
+    </body>
+    </html>

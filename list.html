@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<head>
-    <title>List Example</title>
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-image: url('data:image/png;base64,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');
+                background-repeat: no-repeat;
+                background-size: 1200px;
+            }
+        </style>
+    <title>
+   List Example
+    </title>
 </head>
 <body>
-    <h1 align="center">Entri Elevate Courses</h1>
+    <h1 align="center"><u>Entri Courses</u></h1>
+    <h2><u>courses:</u></h2>
+    <ul style="list-style-type: square">
+        <h2><u>Front-end</u></h2>
 
-<ul style="list-style-type:square;">
-    <h2><u>MERN STACK</u></h2>
-    <h3>Front-end:</h3>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Bootstrap</li>
-    <li>JavaScript</li>
-    <li>ReactJS</li>
-</ul>
-<ol type="A">
-    <h3>Backend:</h3>
-   <li>MongoDB</li>
-   <li>Node Js</li>
-   <li>Express js</li>
-</ol>
-<dl>
-    <dt>Backend</dt>
-    <dd>Backend used to fetch the result</dd>
-    <dt>Frontend</dt>
-    <dd>user view page</dd>
-</dl>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>ReactJS</li>
+        
+    </ul>
+    <ol type="A">
+        <h2><u>Back-end</u></h2>
+
+        <li>MongoDB</li>
+        <li>Nodejs</li>
+        <li>ExpressJs</li>
+    </ol>
+    <dl>
+        <h2><u>Refreshment</u></h2>
+        <dt>tea</dt>
+        <dd>its refresh our mind</dd>
+        <dt>coffee</dt>
+        <dd>its refresh our body</dd>
+    </dl>
 </body>
+</html>
